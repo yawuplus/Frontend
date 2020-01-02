@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML引用</title>
+	</head>
+	<body>
+		<p>WWF的目标是:<q>构建人与自然和谐共存的世界</q></p>
+		<p>用于长引用的HTML,以下内容引用自WWF的网站:</p>
+		<blockquote cite="http://www.worldwildlife.org/who/index.html">
+			五十年来，WWF 一直致力于保护自然界的未来。
+			世界领先的环保组织，WWF 工作于 100 个国家，
+			并得到美国一百二十万会员及全球近五百万会员的支持。
+		</blockquote>
+		<p>用于缩写词的HTML</p>
+		<p><abbr title="World Health Organization">WHO</abbr>成立于1999年</p>
+		<p>用于定义的HTML</p>
+		<p>
+			<dfn title="World Wide Organization">WHO</dfn>成立于1948年</dfn>
+		</p>
+		<p>1如果dfn元素包含具有标题的<abbr>元素，则title定义项目</p>
+		<p><dfn><abbr title="World Wide Organization">WHO</abbr></dfn></p>
+		<p>否则，<dfn>文本内容即是项目，并且父元素包含定义</p>
+		<p><dfn>WHO</dfn> World Wide Organization 成立于1948年，</p>
+		<p>用于联系信息的HTML<address></p>
+		<address>
+			Written by Donald J.Trump</br>
+			Visit us at:</br>
+			Example.com</br>
+			Box 564,Disneyland</br>
+			USA
+		</address></br>
+		<p>用于著作标题的HTML： cite</p></br>
+		<p><cite>The Scream</cite> by Edward Munch.Painted in 1847.</p>
+		<p>用于双向重写的HTML: bdo</p>
+		<bdo dir="rtl">This text will be written from right to left</bdo></br>
+		<p>kbd元素定义键盘输入</p></br>
+		<p>To open a file,select:</p></br>
+		<p><kbd>File| Open...</kbd></p></br>
+		<samp>
+			demo.example.com login: Apr 12 09:10:17
+			Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+		</samp>
+		<p>代码格式code</p>
+		<code>
+			var person = { firstName:"Bill", lastName:"Gates", age:50};
+		</code></br>
+		<p> 元素不保留多余的空格和折行：</p>
+		<p>Coding Example:</p>
+		<code>
+			var person = {
+			firstName: "Bill",
+			lastName : "Gates",
+			age : 50,
+			eyeColor: "Blue"
+			}
+		</code>
+		<p>如需解决该问题，您必须在
+			<pre> 元素中包围代码</p>
+		<code>
+<pre>
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+}
+</pre>
+			</code>
+			<p>html变量格式化</p>
+			<p>Einstein wrote:</p>
+			<p><var>E = c<sup>2</sup></var></p>
+			<p>注释</p>
+			<!-- 在此处写注释 -->
+			
+	</body>
+</html>
