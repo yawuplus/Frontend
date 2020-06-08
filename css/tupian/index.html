@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            margin:200px 0 0 500px;
+        }
+        #bigImg{
+            width:100%;
+            height:100%;
+            display:none;
+            position: relative;
+        }
+        #bigImg .full{
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,.5)
+        }
+        #bigImg img{
+            margin:100px 0 0 250px;
+            width:780px;
+            height:400px;
+        }
+        #bigImg div{
+            position:absolute;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <img id="smallImg" src="img/img.jpg"/>
+    <div id="bigImg" >
+        <div class="full"></div>
+        <img src="img/img.jpg"/>
+    </div>
+    <script>
+        var oDIv = document.getElementById('bigImg')
+        var smallImg = document.getElementById('smallImg');
+        smallImg.onclick=function(){
+            oDIv.style.display="block";
+            smallImg.style.display="none";
+        }
+        oDIv.onclick=function(){
+            smallImg.style.display="block";
+            oDIv.style.display="none";
+        }
+    </script>
+</body>
+</html>
