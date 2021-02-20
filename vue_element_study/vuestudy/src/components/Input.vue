@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <el-form>
+        这里输入文字:
       <el-input type="text"
-                v-model="inputText">
+                v-model="inputText">输入框
       </el-input>
     </el-form>
   </div>
