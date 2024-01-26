@@ -1,2 +1,2 @@
-# StaticWeb
+# Frontend
 Frontend practice.
